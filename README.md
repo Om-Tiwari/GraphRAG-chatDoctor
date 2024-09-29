@@ -1,8 +1,13 @@
 # Knowledge Graph and RAG for Language Models - GraphRAG🕸️
 
 Welcome to the **AI Knowledge Graph Project**, where we're using cutting-edge Graph-based Reasoning, Retrieval-Augmented Generation (RAG), and Language Models to organize and extract structured knowledge from unstructured data.
-
-![Knowledge Graph Visual](./visualisation.png)
+<p align="center">
+  <figure style="display: inline-block; margin-right: 20px;">
+    <img src="./visualisation.png" alt="Knowledge Graph Visual" />
+    <figcaption align="center">Knowledge Graph made with 50 conversation</figcaption>
+  </figure>
+</p>
+<!-- ![Knowledge Graph Visual](./visualisation.png) -->
 
 ## 🔍 Project Overview
 
@@ -36,6 +41,17 @@ This project extracts information from various unstructured text sources, and po
 - `graphRAG_basic_neo4j_langchain.ipynb`: The core notebook that demonstrates building the knowledge graph with Neo4j and LangChain.
 - `train_2kchat.jsonl`: Sample data for training or testing the graph-based RAG pipeline.
 - `visualisation.png`: An example of the knowledge graph visualization.
+
+---
+
+### 📷 Graph Snapshorts
+
+<p align="center">
+  <img src="./visualisation_section_1.png" alt="Knowledge Graph Visual" width="45%" style="margin-right: 20px;"/>
+  <span style="display:inline-block; width: 1px; background-color: #ccc; height: 100px; vertical-align: middle; margin: 0 10px;"></span>
+  <img src="./visualisation_section.png" alt="Knowledge Graph Visual" width="45%" />
+</p>
+
 
 ---
 
