@@ -1,4 +1,4 @@
-# Knowledge Graph for Language Models
+# Knowledge Graph and RAG for Language Models - GraphRAG🕸️
 
 Welcome to the **AI Knowledge Graph Project**, where we're using cutting-edge Graph-based Reasoning, Retrieval-Augmented Generation (RAG), and Language Models to organize and extract structured knowledge from unstructured data.
 
@@ -6,7 +6,7 @@ Welcome to the **AI Knowledge Graph Project**, where we're using cutting-edge Gr
 
 ## 🔍 Project Overview
 
-This repository contains code and resources for building **graph-based knowledge systems** that integrate with **Neo4j** and **LangChain**. By leveraging **knowledge graphs**, we can efficiently retrieve relevant information and provide better context-aware responses using **Language Models** like GPT-4, LLAMA, MISTRAL.
+This repository contains code and resources for building **graph-based knowledge systems** that integrate with **Neo4j** and **LangChain**. By leveraging **knowledge graphs**, we can efficiently retrieve relevant information and provide better context-aware responses using **Language Models** like GPT-4, LLAMA, MISTRAL. The  [dataset](./train_2kchat.jsonl) file is a JSON Lines (jsonl) format dataset containing a collection of conversational or textual data. Each line in the file is a valid JSON object(there is 2000 of them) representing a dialogue turn or textual snippet that will be parsed and fed into the knowledge graph. It is collected from [source](https://www.askadoctor24x7.com/community)
 
 ---
 
@@ -14,7 +14,7 @@ This repository contains code and resources for building **graph-based knowledge
 
 - **Neo4j Integration**: Build and query a **knowledge graph** using Neo4j to store nodes and relationships.
 - **LangChain Integration**: Seamless use of Language Models to interact with the knowledge graph for better information extraction and reasoning.
-- **RAG Framework**: Employ **Retrieval-Augmented Generation (RAG)** for combining generative AI and knowledge graphs for enhanced retrieval.
+- **GraphRAG Framework**: Employ **Retrieval-Augmented Generation (RAG)** for combining generative AI and knowledge graphs for enhanced retrieval.
 - **Visualization**: View your knowledge graph visually to understand the relationships between data entities (like the one above).
   
 ---
@@ -27,20 +27,7 @@ This project extracts information from various unstructured text sources, and po
 
 ## 🚀 Get Started
 
-1. Open the notebook in Colab:
-    ```bash
-    git clone https://github.com/your_username/AI-Knowledge-Graph.git
-    ```
-
-2. Set up the environment:
-    ```bash
-    pip install -r requirements.txt
-    ```
-
-3. Start your Neo4j server and load the graph:
-    ```bash
-    python graphRAG_basic_neo4j_langchain.py
-    ```
+   [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Om-Tiwari/GraphRAG-chatDoctor/blob/main/GRAPH_RAG.ipynb)
 
 ---
 
@@ -57,51 +44,18 @@ This project extracts information from various unstructured text sources, and po
 - **Neo4j**: Graph database to store knowledge nodes and relationships.
 - **LangChain**: Framework for large language models, enabling connection to external tools and retrieval systems.
 - **Python**: Primary language for building the backend system.
-- **D3.js**: For knowledge graph visualizations.
-
----
-
-## 📈 Graph Data Example
-
-Here’s a sneak peek of what your knowledge graph might look like!
-
-![Graph Visualisation](./visualisation.png)
-
----
-
-## 📊 Analytics Dashboard
-
-Get real-time stats and insights on your knowledge graph with this custom dashboard:
-
-
-<iframe src="https://public.tableau.com/views/KnowledgeGraphDashboard"></iframe>
-
 
 ---
 
 ## 🎯 Future Goals
-
-- **Expand Integrations**: Add support for more language models and other graph-based databases.
-- **Advanced Visualizations**: Introduce more complex visualizations for deeper insights into graph data.
-- **OpenAI API**: Integrate OpenAI GPT-4 for automated question-answering over the knowledge graph.
+- **Chat Interface**: Have a chat interface for the user to talk to the dataset
+- **Specialized Doc**: Train multiple llms on specialized dataset for example one for Dental Health, General Health, Orthologist, etc.
 
 ---
 
 ## 🤝 Contributing
 
-We welcome contributions! Please open an issue or submit a pull request to discuss any improvements or new features you'd like to add.
-
----
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
-## 🌟 Acknowledgments
-
-Special thanks to all the contributors and the open-source community for making this project possible.
+I welcome contributions! Please open an issue or submit a pull request to discuss any improvements or new features you'd like to add.
 
 ---
 
